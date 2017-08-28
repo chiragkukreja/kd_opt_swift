@@ -6,15 +6,8 @@ import XCTest
 let testObserver = TestObserver()
 XCTestObservationCenter.shared().addTestObserver(testObserver)
 
-func addTwoNumbers(_ a: Int, _ b: Int) -> Int {
-    return a+b
-}
-
 class MyTestCase: XCTestCase {
-    func testAddTwoNumbers(){
-        print("testAddTwoNumbers")
-        XCTAssertTrue(addTwoNumbers(1,2) == 3)
-    }
+    // your code goes here
 }
 
 MyTestCase.defaultTestSuite().run()
